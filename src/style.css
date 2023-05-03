@@ -35,6 +35,7 @@ header {
   align-items: center;
   height: var(--header-hight);
   width: 100%;
+  gap: 40px;
 }
 
 .site-info {
@@ -276,5 +277,9 @@ main {
   nav.show + #content {
     width: calc(100vw - var(--nav-bar-width));
     transform: translateX(0);
+  }
+
+  .clear-button {
+    padding: 5px 10px;
   }
 }
