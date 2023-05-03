@@ -11,3 +11,11 @@ const todoList = Storage.getTodoList()
 todoList.checkToday()
 todoList.checkThisWeek()
 Dom.showProjects(todoList)
+const clearButton = document.querySelector('.clear-button')
+clearButton.addEventListener('click', () => {
+  let deleteTodoList = confirm('Are you sure you want to clear your todo list')
+  if (deleteTodoList) {
+    Storage.deleteTodoList()
+    location.reload()
+  }
+})

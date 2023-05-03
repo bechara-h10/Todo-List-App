@@ -1,10 +1,10 @@
-import TodoList from "./todolist"
-import Project from "./project"
-import Todo from "./todo"
+import TodoList from './todolist'
+import Project from './project'
+import Todo from './todo'
 
 class Storage {
-  static saveTodoList(todoList){
-    localStorage.setItem('todoList',JSON.stringify(todoList))
+  static saveTodoList(todoList) {
+    localStorage.setItem('todoList', JSON.stringify(todoList))
   }
 
   static getTodoList() {
@@ -26,8 +26,14 @@ class Storage {
           project.getTodos().map((todo) => Object.assign(new Todo(), todo))
         )
       )
-
+    if (todoList.projects == []) {
+      todoList = new TodoList()
+    }
     return todoList
+  }
+
+  static deleteTodoList() {
+    localStorage.clear()
   }
 }
 

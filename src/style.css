@@ -39,7 +39,7 @@ header {
 
 .site-info {
   display: flex;
-  width: 100%;
+  width: 50%;
   justify-content: flex-end;
 }
 
@@ -218,6 +218,23 @@ main {
   font-size: 30px;
   margin-left: 45px;
   display: none;
+  cursor: pointer;
+}
+
+.clear-button-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.clear-button {
+  border: none;
+  background-color: transparent;
+  color: #ff1122;
+  padding: 10px 20px;
+  border: solid 1px #ff1122;
+  border-radius: 5px;
   cursor: pointer;
 }
 
