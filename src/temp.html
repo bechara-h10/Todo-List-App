@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8797b4aa7a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <header>
+      <button class="nav-bar-show">
+        <i class="fa-solid fa-grip-lines"></i>
+      </button>
+      <div class="site-info">
+        <h1>Todo App</h1>
+        <span class="site-logo"><i class="fa-solid fa-bars-progress"></i></span>
+      </div>
+    </header>
+    <main>
+      <nav>
+        <div class="default-project-container">
+          <div class="inbox-container"></div>
+          <div class="today-container"></div>
+          <div class="this-week-container"></div>
+        </div>
+        <div class="projects-container"></div>
+        <div class="add-project-container"></div>
+      </nav>
+
+      <div id="content">
+        <h1 class="project-title"></h1>
+        <div class="todos-container"></div>
+        <div class="add-todo-container"></div>
+      </div>
+    </main>
+  </body>
+</html>
